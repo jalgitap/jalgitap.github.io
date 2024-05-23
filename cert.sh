@@ -3,6 +3,7 @@
 mkdir /etc/certificates
 touch /etc/domain
 domain=$(cat /etc/domain)
+apt install socat -y
 wget https://raw.githubusercontent.com/acmesh-official/acme.sh/master/acme.sh
 bash acme.sh --install
 rm acme.sh
